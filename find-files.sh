@@ -1,5 +1,7 @@
 #!/bin/bash
 
-find . -name "*z" -type f
+find find-files-example -type f -name "*z"
 
-find . -name "a*" 
+
+
+find find-files-example -name "a*" 
