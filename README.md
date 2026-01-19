@@ -14,6 +14,11 @@
 - head
 - tail
 - cut
+- rev
+
+
+
+
 
 
 #  ---
