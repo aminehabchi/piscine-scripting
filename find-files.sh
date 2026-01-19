@@ -1,6 +1,8 @@
 #!/bin/bash
 
-curl -s https://assets.01-edu.org/devops-branch/find-files-example.zip
+curl -s -O https://assets.01-edu.org/devops-branch/find-files-example.zip
+
+unzip -q find-files-example.zip
 
 find find-files-example -type f -name "*z"
 
