@@ -6,5 +6,5 @@ touch struct/3/text.txt
 touch struct/4/text2.txt
 touch struct/A/text3.txt
 
-tar -cf file-struct.tar struct/
+tar -cf file-struct.tar -C struct .
 
