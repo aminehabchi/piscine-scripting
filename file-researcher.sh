@@ -1,5 +1,5 @@
 #!/bin/bash
 
-head -n 1 file-researcher/facts.txt
+grep "It takes 12 honey" file-researcher/facts.txt
 
-grep -in "year" file-researcher/facts.txt
+grep -i "year" file-researcher/facts.txt
