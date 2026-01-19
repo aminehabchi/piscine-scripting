@@ -13,9 +13,10 @@
 - echo
 - head
 - tail
-
+- cut
 
 
 #  ---
 - Pipes
 - Redirction
+- chaining

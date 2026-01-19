@@ -1,6 +1,3 @@
 #!/bin/bash
 
-find . -type f -name "*.txt" | while read file; do
-    name=$(basename "$file" .txt)
-    echo "${name}"
-done
+find . -type f -name "*.txt" | cut -d "/" -f 3 | cut -d "." -f 1
