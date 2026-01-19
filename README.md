@@ -11,8 +11,11 @@
 - cp
 - rm
 - echo
+- head
+- tail
 
 
 
 #  ---
 - Pipes
+- Redirction
