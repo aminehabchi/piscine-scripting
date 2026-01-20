@@ -16,6 +16,7 @@
 - cut
 - rev
 - wc
+- tr
 
 
 
