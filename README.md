@@ -17,6 +17,7 @@
 - rev
 - wc
 - tr
+- awk
 
 
 
