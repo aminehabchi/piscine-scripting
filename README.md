@@ -15,7 +15,7 @@
 - tail
 - cut
 - rev
-
+- wc
 
 
 
