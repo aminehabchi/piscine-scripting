@@ -1,4 +1,3 @@
 #!/bin/bash
 
-ls -F --sort=time | tr '\n' ', ' | sed 's/, $//'
-
+ls -Fu --sort=time | tr '\n' ',' | sed 's/,$//'
