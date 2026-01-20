@@ -1,2 +1,2 @@
 #!/bin/sh
-ls -l | sed 'n;d'
+ls -l | sed '1d; n; d'
