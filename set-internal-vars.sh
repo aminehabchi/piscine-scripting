@@ -11,3 +11,8 @@ echo $MY_MESSAGE
 echo $MY_NUM
 echo $MY_PI 
 echo "${MY_ARR[*]}" | sed 's/ /, /g'
+
+unset $MY_MESSAGE
+unset $MY_NUM
+unset $MY_PI 
+unset $MY_ARR
