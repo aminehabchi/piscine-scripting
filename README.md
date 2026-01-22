@@ -4,7 +4,7 @@
 - touch 
 - mkdir
 - chmod
-- grap
+- grep
 - curl
 - jq
 - tar
@@ -28,5 +28,6 @@
 
 #  ---
 - Pipes
-- Redirction
+- Redirction >
+- Append >>
 - chaining
