@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf '41 20 * * 5 echo "01"' > task1
+printf '41 20 * * 5 echo "01"\n' > task1
 printf '* * * * * sh /home/user01/check' > task2
 printf '0 0 * * * sh /home/user01/backup' > task3
 printf '@reboot 01exec' > task4
