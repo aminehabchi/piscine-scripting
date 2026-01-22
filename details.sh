@@ -1,5 +1,6 @@
 #!/bin/bash
 
+touch -t 202201010000 file1.txt
 
 chmod 600 file1.txt
 
