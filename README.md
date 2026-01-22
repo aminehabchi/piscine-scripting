@@ -1,5 +1,6 @@
 # command
 
+- man
 - touch 
 - mkdir
 - chmod
