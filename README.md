@@ -31,3 +31,4 @@
 - Redirction >
 - Append >>
 - chaining
+- input redirection <
