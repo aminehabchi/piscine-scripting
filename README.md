@@ -19,6 +19,8 @@
 - tr
 - awk
 - alias
+- crontab
+- truncate
 
 
 
