@@ -1,6 +1,5 @@
 #!/bin/bash
 
-touch file1.txt
 
 chmod 600 file1.txt
 
