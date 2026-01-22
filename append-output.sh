@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat songs.txt | grep -v "* - J*" >> result.txt
+cat songs.txt | grep "* - J*" >> result.txt
