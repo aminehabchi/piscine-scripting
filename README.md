@@ -18,7 +18,7 @@
 - wc
 - tr
 - awk
-
+- alias
 
 
 
