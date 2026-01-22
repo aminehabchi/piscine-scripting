@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir cron-tasks
-cd cron-tasks
+mkdir auto-jobs
+cd auto-jobs
 
 
 printf '41 20 * * 5 /bin/echo "01"' > task1
@@ -14,8 +14,8 @@ printf '@reboot 01exec' > task4
 
 cd ..
 
-tar -cf cron-tasks.tar cron-tasks
+tar -cf auto-jobs.tar auto-jobs
 
-ls -l cron-tasks.tar
+ls -l auto-jobs.tar
 
-rm cron-tasks
+rm -r auto-jobs
