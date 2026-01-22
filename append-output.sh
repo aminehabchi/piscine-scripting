@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep  '\" - J' songs.txt >> result.txt
+grep  ' - J' songs.txt >> result.txt
