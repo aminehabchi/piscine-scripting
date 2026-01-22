@@ -3,10 +3,10 @@
 cat << 'EOF' > show-info.sh
 #!/bin/sh
 
-cat -e << 'INFO'
-HOME=$HOME
-PATH=$PATH
-SHELL=$SHELL
+cat -e << INFO
+The current directory is: $(pwd)
+The default paths are: $PATH
+The current user is: $USER
 INFO
 EOF
 
