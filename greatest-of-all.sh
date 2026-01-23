@@ -1,40 +1,30 @@
 #!/bin/bash
 
-read_number() {
-    local prompt="$1"
-    local num
-    while true; do
-        echo -n "$prompt"
-        read -r num
-
-        if [[ ! $num =~ ^[0-9]+$ ]]; then
-            echo "ERROR: Invalid input. Only positive numerical characters are allowed."
-            exit 1
-        fi
-
-        if [[ $num -gt 10000 ]]; then
-            echo "ERROR: The number entered is too large."
-            exit 1
-        fi
-
-        echo "$num"
-        return
-    done
-}
-
-
-numbers=()
-
-
-for ((i=1; i<=10; i++)); do
-    numbers+=("$(read_number "Enter number #$i: ")")
+array=()
+c=0
+while true; do
+    c=$((c + 1))
+    echo -n "Enter a number: "
+    read -r line
+    if [[ ! $line =~ ^[0-9]+$ ]]; then
+        echo "ERROR: Invalid input only positive numerical characters are allowed"
+        exit 0
+    fi
+    if [[ $line -gt 10000 ]]; then
+        echo "ERROR: The number entered is too large"
+        exit 0
+    fi
+    array+=("$line")
+    if [[ $c == 10 ]]; then
+        break
+    fi
 done
 
+max="${array[0]}"
 
-max="${numbers[0]}"
-for num in "${numbers[@]}"; do
-    if [[ $num -gt $max ]]; then
-        max="$num"
+for i in "${array[@]}"; do
+    if [[ $i -gt $max ]]; then
+        max="$i"
     fi
 done
 
