@@ -8,11 +8,11 @@ fi
 
 integer_regex='^-?[0-9]+$'
 
-if ! [[ $1 =~ $integer_regex && $2 =~ $integer_regex ]]; then
+fi
+if [[ ! "$a" =~ ^[+-]?[0-9]+$ || ! "$b" =~ ^[+-]?[0-9]+$ ]]; then
     echo "Error: both arguments must be integers"
     exit 0
 fi
-
 
 if [ "$2" -eq 0 ]; then
     echo "Error: division by zero is not allowed"
