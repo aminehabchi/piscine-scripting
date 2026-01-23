@@ -22,6 +22,7 @@
 - alias
 - crontab
 - truncate
+- bc
 
 
 
