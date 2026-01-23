@@ -22,7 +22,6 @@ if [ "$num2" -eq 0 ]; then
     exit 1
 fi
 
-
 result=$(( num1 / num2 ))
 
 echo "$result"
