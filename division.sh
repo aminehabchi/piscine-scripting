@@ -1,24 +1,19 @@
 #!/bin/bash
 
-if [ $#  -lt 2 ]; then
+a=$1
+b=$2
+
+if [[ -z "$a" || -z "$b" ]]; then
     echo "Error: two numbers must be provided"
     exit 0
 fi
-
-
-
-if [[ ! "$1" =~ ^[+-]?[0-9]+$ || ! "$2" =~ ^[+-]?[0-9]+$ ]]; then
+if [[ ! "$a" =~ ^[+-]?[0-9]+$ || ! "$b" =~ ^[+-]?[0-9]+$ ]]; then
     echo "Error: both arguments must be integers"
     exit 0
 fi
-
-
-
-if [ "$2" -eq 0 ]; then
+if [[ "$b" -eq 0 ]]; then
     echo "Error: division by zero is not allowed"
     exit 0
 fi
-
-
-
-echo $(( $1 / $2 )) | bc
+# total=$(())
+echo "$a" / "$b" | bc 
