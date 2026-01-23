@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -ne 2 ]; then
+if [ $#  -lt 2 ]; then
     echo "Error: two numbers must be provided"
     exit 1
 fi
