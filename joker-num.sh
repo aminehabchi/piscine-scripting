@@ -11,6 +11,11 @@ if [ $1 -lt 0 ]; then
     exit 1
 fi
 
+if [ $1 -gt 100 ]; then
+    echo "Error: wrong argument"
+    exit 1
+fi
+
 for i in {1..5}
 do
     echo "Enter your guess ($((5 - i + 1)) tries left):"
