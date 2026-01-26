@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [ "$#" -lt 3 ]; then
+
+if [ "$#" -ne 3 ]; then
     echo "Error: expect 3 arguments"
     exit 1
 fi
