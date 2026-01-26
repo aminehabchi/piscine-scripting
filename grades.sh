@@ -10,6 +10,8 @@ if ! [[ "$1" =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
+notes=()
+
 for (( i=1; i<=$1; i++ )); do
     read -p "Student Name #$i: " name
     read -p "Student Grade #$i: " grade
@@ -26,13 +28,18 @@ for (( i=1; i<=$1; i++ )); do
     fi
 
     if [ "$grade" -ge 90 ]; then
-        echo "$name: You did an excellent job!"
+        notes+=("$name: You did an excellent job!")
     elif [ "$grade" -ge 70 ]; then
-        echo "$name: You did a good job!"
+        notes+=("$name: You did a good job!")
     elif [ "$grade" -ge 50 ]; then
-        echo "$name: You need a bit more effort!"
+        notes+=("$name: You need a bit more effort!")
     else
-        echo "$name: You had a poor performance!"
+        notes+=("$name: You had a poor performance!")
     fi
 
+done
+
+
+for (( i=0; i<${#notes[@]}; i++ )); do
+    echo "${notes[i]}"
 done
