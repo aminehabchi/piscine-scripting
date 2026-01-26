@@ -32,7 +32,7 @@ do_mult(){
 do_divide(){
     if (( $2 == 0 )); then 
         echo "Error: division by 0"
-        exit 1
+        exit 2
     fi
     echo $(($1 / $2))
 }
