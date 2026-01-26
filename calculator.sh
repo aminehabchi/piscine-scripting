@@ -38,16 +38,20 @@ do_divide(){
 
 
 
-if [ "$2" = "*" ]; then
-    do_mult "$1" "$3"
-elif [ "$2" = "+" ]; then
-    do_add "$1" "$3"
-elif [ "$2" = "/" ]; then
-    do_divide "$1" "$3"
-elif [ "$2" = "-" ]; then
-    do_sub "$1" "$3"
-else
-    echo "Error: invalid operator"
-    exit 3
-fi
-
+case "$2" in "*")
+        do_mult "$1" "$3"
+        ;;
+    "+")
+        do_add "$1" "$3"
+        ;;
+    "/")
+        do_divide "$1" "$3"
+        ;;
+    "-")
+        do_sub "$1" "$3"
+        ;;
+    *)
+        echo "Error: invalid operator"
+        exit 3
+        ;;
+esac
