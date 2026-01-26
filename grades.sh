@@ -20,7 +20,7 @@ for (( i=1; i<=$1; i++ )); do
     elif ! [[ "$grade" =~ ^[0-9]+$ ]]; then
         echo "Error: The grade '$grade' is not a valid number. Only numerical grades between 0 and 100 are accepted."
         exit 1
-    elif [ "$grade" -lt 0 ] || [ "$grade" -gt 100 ]; then
+    elif  [ "$grade" -gt 100 ]; then
         echo "Error: The grade '$grade' must be between 0 and 100."
         exit 1
     fi
