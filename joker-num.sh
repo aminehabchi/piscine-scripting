@@ -6,6 +6,11 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
+if ! [[ $num =~ ^[0-9]+$ ]]; then
+    echo "Error: wrong argument"
+    exit 1
+fi
+
 if [ $1 -lt 0 ]; then
     echo "Error: wrong argument"
     exit 1
