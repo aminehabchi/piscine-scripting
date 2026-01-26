@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-    echo "Error: wrong argument"
+    echo "Error: expect 1 argument only!"
     exit 1
 fi
 
 if ! [[ "$1" =~ ^[0-9]+$ ]]; then
-    echo "Error: wrong argument"
+    echo "Error: expect 1 argument only!"
     exit 1
 fi
 
