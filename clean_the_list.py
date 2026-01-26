@@ -7,7 +7,7 @@ def clean_list(list):
         l=l.strip().capitalize()
         if l=="Milk":
             t=True
-        list[i]=str(i+1)+" /"+l
+        list[i]=str(i+1)+"/ "+l
     if t==False:
         list.append(f"{len(list)+1}/ Milk")
     return list
