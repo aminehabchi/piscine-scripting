@@ -27,7 +27,7 @@ for (( i=1; i<=$1; i++ )); do
 
     if [ "$grade" -ge 90 ]; then
         echo "$name: You did an excellent job!"
-    elif [ "$grade" -ge 75 ]; then
+    elif [ "$grade" -ge 70 ]; then
         echo "$name: You did a good job!"
     elif [ "$grade" -ge 50 ]; then
         echo "$name: You need a bit more effort!"
