@@ -11,7 +11,7 @@ if ! [[ $1 =~ ^[0-9]+$ ]]; then
     exit 1
 fi
 
-if [ "$1" -lt 0 ] || [ "$1" -gt 100 ]; then
+if [ "$1" -lt 01 ] || [ "$1" -gt 100 ]; then
     echo "Error: wrong argument"
     exit 1
 fi
@@ -25,6 +25,8 @@ do
     if [ -z "$num" ]; then
         continue
     elif ! [[ $num =~ ^[0-9]+$ ]]; then
+        continue
+    elif [ "$num" -lt 01 ] || [ "$num" -gt 100 ]; then
         continue
     elif [ "$num" -eq "$1" ]; then
         echo "Congratulations, you found the number in $i moves!"
