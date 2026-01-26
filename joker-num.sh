@@ -26,7 +26,7 @@ do
         continue
     elif ! [[ $num =~ ^[0-9]+$ ]]; then
         continue
-    elif [ "$num" -lt 01 ] || [ "$num" -gt 100 ]; then
+    elif [ "$num" -lt 0 ] || [ "$num" -gt 100 ]; then
         continue
     elif [ "$num" -eq "$1" ]; then
         echo "Congratulations, you found the number in $i moves!"
