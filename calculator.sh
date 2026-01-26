@@ -38,19 +38,20 @@ do_divide(){
 
 
 
-case "$2" in "*")
+case "$2" in
+ "*")
         do_mult "$1" "$3"
         ;;
     "+")
         do_add "$1" "$3"
         ;;
-    "/")
+ "/")
         do_divide "$1" "$3"
         ;;
     "-")
         do_sub "$1" "$3"
         ;;
-    *)
+  *)
         echo "Error: invalid operator"
         exit 3
         ;;
