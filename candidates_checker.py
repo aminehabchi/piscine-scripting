@@ -8,6 +8,8 @@ if len(sys.argv) != 2:
 
 n = int(sys.argv[1])
 
+
+
 result = ""
 
 for i in range(n):
@@ -22,7 +24,5 @@ for i in range(n):
         result += f"{name} is eligible\n"
 
 
-if result != "":
-    result = result[:-1]
 
-print(result)
+print(result, end="")
