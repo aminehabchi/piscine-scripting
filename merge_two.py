@@ -11,10 +11,3 @@ def merge_two(first_dict):
 
 
 
-first = {
-    "Bob": 36,
-    "Louise": 23,
-    "Lea": 34
-}
-
-print(merge_two(first))
