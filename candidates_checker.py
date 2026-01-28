@@ -23,5 +23,7 @@ for i in range(n):
     else:
         result =result + f"{name} is eligible\n"
 
-
+if result!="":
+    result = result[:-1] 
+    
 print(result)
