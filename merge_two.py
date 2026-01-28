@@ -1,4 +1,4 @@
-
+import json
 def merge_two(first_dict):
     while True:
         print("Add a new entry:")
@@ -7,7 +7,7 @@ def merge_two(first_dict):
             break
         value = int(input("value: "))
         first_dict[key]=value
-    return first_dict
+    return json.dumps(first_dict)
 
 
 
