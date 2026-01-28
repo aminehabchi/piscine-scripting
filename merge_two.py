@@ -1,6 +1,7 @@
 
 def merge_two(first_dict):
     while True:
+        print("Add a new entry:")
         key = input("key: ")
         if key=="exit":
             break
@@ -10,3 +11,10 @@ def merge_two(first_dict):
 
 
 
+first = {
+    "Bob": 36,
+    "Louise": 23,
+    "Lea": 34
+}
+
+print(merge_two(first))
