@@ -12,9 +12,9 @@ while true; do
         exit 0
     fi
 
-    if [[ 0 -gt $line]]; then
-        echo "ERROR: Invalid input only positive numerical characters are allowed"
-        exit 0
+    if [[ $line -lt 0 ]]; then
+        echo "ERROR: Invalid input, only positive numbers are allowed"
+        exit 1
     fi
 
     if [[ $line -gt 10000 ]]; then
