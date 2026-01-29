@@ -2,7 +2,7 @@
 
 
 
-def create_person(first_name, last_name, *,age, gender,  size=1.83, job="taxidermist"):
+def create_person(first_name, last_name,age, gender, *,  size=1.83, job="taxidermist"):
 
     return {
         "first_name": first_name,
@@ -14,6 +14,6 @@ def create_person(first_name, last_name, *,age, gender,  size=1.83, job="taxider
     }
 
 
-person = create_person("Kevin", "Boulin", 34, "male")
+person = create_person("Kevin", "Boulin", age=34, gender="male")
 print(person)
 
