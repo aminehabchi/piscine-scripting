@@ -1,7 +1,8 @@
 #!/bin/bash
 
-array=()
 c=0
+
+max=0 
 while true; do
     c=$((c + 1))
     echo -n "Enter a number: "
@@ -14,18 +15,16 @@ while true; do
         echo "ERROR: The number entered is too large"
         exit 0
     fi
-    array+=("$line")
+    
+    if [[ $line -gt $max ]]; then
+        max=$line
+    fi
+
     if [[ $c == 10 ]]; then
         break
     fi
 done
 
-max="${array[0]}"
 
-for i in "${array[@]}"; do
-    if [[ $i -gt $max ]]; then
-        max="$i"
-    fi
-done
 
 echo "The largest number is: $max"
