@@ -7,6 +7,9 @@ while true; do
     c=$((c + 1))
     echo -n "Enter a number: "
     read -r line
+    if [[ -z "$line" ]]; then
+        break
+    fi
     if [[ ! $line =~ ^[0-9]+$ ]]; then
         echo "ERROR: Invalid input only positive numerical characters are allowed"
         exit 1
