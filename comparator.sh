@@ -13,7 +13,6 @@ if ! [[ "$arg1" =~ ^-?[0-9]+$ ]] || ! [[ "$arg2" =~ ^-?[0-9]+$ ]]; then
     exit 1
 fi
 
-# Compare the numbers
 if [[ "$arg1" -gt "$arg2" ]]; then
     echo "$arg1 > $arg2"
 elif [[ "$arg1" -lt "$arg2" ]]; then
