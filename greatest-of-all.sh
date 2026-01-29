@@ -3,9 +3,7 @@
 max=0  
 
 for i in {1..10}; do
-    echo -n "Enter a number: "
-    read -r line
-
+    read -p "Enter a number: " line
     if [[ -z "$line" ]]; then
         echo "ERROR: Invalid input only positive numerical characters are allowed"
         exit 1
