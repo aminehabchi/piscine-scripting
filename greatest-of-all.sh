@@ -9,7 +9,7 @@ while true; do
     read -r line
     if [[ ! $line =~ ^[0-9]+$ ]]; then
         echo "ERROR: Invalid input only positive numerical characters are allowed"
-        exit 0
+        exit 1
     fi
 
     if [[ $line -lt 0 ]]; then
@@ -19,7 +19,7 @@ while true; do
 
     if [[ $line -gt 10000 ]]; then
         echo "ERROR: The number entered is too large"
-        exit 0
+        exit 1
     fi
     
     if [[ $line -gt $max ]]; then
