@@ -33,3 +33,4 @@
 - Append >>
 - chaining
 - input redirection <
+- agrs
