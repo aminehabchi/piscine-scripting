@@ -9,7 +9,7 @@ arg1=$1
 arg2=$2
 
 
-if ! [[ "$arg1" =~ ^-?[0-9]+$ ]] || ! [[ "$arg2" =~ ^-?[0-9]+$ ]]; then
+if ! [[ "$arg1" =~ ?[0-9]+$ ]] || ! [[ "$arg2" =~ ?[0-9]+$ ]]; then
     echo "Error: Only two numeric arguments are acceptable!"
     exit 1
 fi
