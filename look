@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+find . -name "a*" 
+
+
+find . -type f -name "*z"
+
+
+find . -type f -name "z*a"
