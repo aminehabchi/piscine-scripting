@@ -4,4 +4,6 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
-expr "$1" + "$2"
+result=$(expr "$1" + "$2")
+
+echo "$result"
