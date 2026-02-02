@@ -23,6 +23,8 @@
 - crontab
 - truncate
 - bc
+- env
+- cut
 
 
 
